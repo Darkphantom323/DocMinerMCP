@@ -224,17 +224,28 @@ doc-miner-mcp-server/
 ### Architecture Overview
 
 ```mermaid
-graph TD
-    A[PDF Documents] --> B[PDF Integration]
-    B --> C[Text Chunking]
-    C --> D[Vector Embeddings]
-    D --> E[ChromaDB]
-    E --> F[Semantic Search]
-    F --> G[Note Generation]
-    G --> H[Obsidian Integration]
-    I[MCP Server] --> J[AI Assistant]
-    F --> I
-    G --> I
+graph LR
+    A[📄 PDF Documents] --> B[🔄 PDF Processing]
+    B --> C[🧩 Text Chunking]
+    C --> D[🧠 Vector Embeddings]
+    D --> E[🗄️ ChromaDB]
+    
+    F[🤖 AI Assistant] --> G[🔌 MCP Server]
+    G --> H{📋 MCP Tools}
+    
+    H --> I[🔍 Search Tool]
+    H --> J[📝 Note Creator]
+    H --> K[📚 Study Assistant]
+    
+    I --> E
+    J --> E
+    J --> L[📓 Obsidian Vault]
+    K --> E
+    
+    style A fill:#e1f5fe
+    style E fill:#f3e5f5
+    style G fill:#e8f5e8
+    style L fill:#fff3e0
 ```
 
 ## 🤝 Contributing
