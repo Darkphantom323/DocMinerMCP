@@ -171,8 +171,9 @@ This server implements the Model Context Protocol, making it compatible with var
 
 ### Steps to integrate it into Cursor/Claude Desktop
 1. Navigate to Settings->Tools and Integrations and add MCP server
-   ![image](https://github.com/user-attachments/assets/b31ffa83-e34f-4faa-be78-bbc16c6931c1)
    
+   ![image](https://github.com/user-attachments/assets/eb863ab3-6511-4368-91e5-8548981ad2e3)
+
 2. Add this in mcp.json and save it.
 ```json
 {
