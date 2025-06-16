@@ -22,6 +22,33 @@ The Document Miner MCP Server is a powerful tool that automatically processes yo
 - **🗄️ Vector Database**: ChromaDB integration for fast similarity search
 - **🔧 Configurable**: Flexible configuration for different use cases
 
+## 🏗️ Architecture Overview
+
+```mermaid
+graph LR
+    A[📄 PDF Documents] --> B[🔄 PDF Processing]
+    B --> C[🧩 Text Chunking]
+    C --> D[🧠 Vector Embeddings]
+    D --> E[🗄️ ChromaDB]
+    
+    F[🤖 AI Assistant] <--> G[🔌 MCP Server]
+    G <--> H{📋 MCP Tools}
+    
+    H <--> I[🔍 Search Tool]
+    H <--> J[📝 Note Creator]
+    H <--> K[📚 Study Assistant]
+    
+    I <--> E
+    J <--> E
+    J --> L[📓 Obsidian Vault]
+    K <--> E
+    
+    style A fill:#e1f5fe
+    style E fill:#f3e5f5
+    style G fill:#e8f5e8
+    style L fill:#fff3e0
+```
+
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -220,33 +247,6 @@ doc-miner-mcp-server/
 2. **Add configuration options to `config.py`**
 3. **Update the MCP server tools in `server.py`**
 4. **Add tests for new functionality**
-
-### Architecture Overview
-
-```mermaid
-graph LR
-    A[📄 PDF Documents] --> B[🔄 PDF Processing]
-    B --> C[🧩 Text Chunking]
-    C --> D[🧠 Vector Embeddings]
-    D --> E[🗄️ ChromaDB]
-    
-    F[🤖 AI Assistant] <--> G[🔌 MCP Server]
-    G <--> H{📋 MCP Tools}
-    
-    H <--> I[🔍 Search Tool]
-    H <--> J[📝 Note Creator]
-    H <--> K[📚 Study Assistant]
-    
-    I <--> E
-    J <--> E
-    J --> L[📓 Obsidian Vault]
-    K <--> E
-    
-    style A fill:#e1f5fe
-    style E fill:#f3e5f5
-    style G fill:#e8f5e8
-    style L fill:#fff3e0
-```
 
 ## 🤝 Contributing
 
