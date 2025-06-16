@@ -230,17 +230,17 @@ graph LR
     C --> D[🧠 Vector Embeddings]
     D --> E[🗄️ ChromaDB]
     
-    F[🤖 AI Assistant] --> G[🔌 MCP Server]
-    G --> H{📋 MCP Tools}
+    F[🤖 AI Assistant] <--> G[🔌 MCP Server]
+    G <--> H{📋 MCP Tools}
     
-    H --> I[🔍 Search Tool]
-    H --> J[📝 Note Creator]
+    H <--> I[🔍 Search Tool]
+    H <--> J[📝 Note Creator]
     H --> K[📚 Study Assistant]
     
-    I --> E
-    J --> E
+    I <--> E
+    J <--> E
     J --> L[📓 Obsidian Vault]
-    K --> E
+    K <--> E
     
     style A fill:#e1f5fe
     style E fill:#f3e5f5
