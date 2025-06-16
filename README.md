@@ -171,9 +171,7 @@ This server implements the Model Context Protocol, making it compatible with var
 
 ### Steps to integrate it into Cursor/Claude Desktop
 1. Navigate to Settings->Tools and Integrations and add MCP server
-   
-   ![image](https://github.com/user-attachments/assets/eb863ab3-6511-4368-91e5-8548981ad2e3)
-   <img src="https://github.com/user-attachments/assets/eb863ab3-6511-4368-91e5-8548981ad2e3" width="500">
+   <img src="https://github.com/user-attachments/assets/eb863ab3-6511-4368-91e5-8548981ad2e3" width="600">
 
 3. Add this in mcp.json and save it.
 ```json
@@ -187,9 +185,9 @@ This server implements the Model Context Protocol, making it compatible with var
 }
 ```
 3. Toggle the MCP and enable it
-  ![image](https://github.com/user-attachments/assets/5917721f-9596-410a-9b6a-bf5d08f6388d)
+   <img src="https://github.com/user-attachments/assets/5917721f-9596-410a-9b6a-bf5d08f6388d" width="600">
 
-4. Now the code assistant in client can access all the MCP tools. 
+5. Now the code assistant in client can access all the MCP tools. 
 
 ## 📁 Project Structure
 
