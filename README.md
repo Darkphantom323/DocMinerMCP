@@ -9,7 +9,7 @@
 
 ## 🌟 Overview
 
-The Knowledge Base MCP Server is a powerful tool that automatically processes your PDF documents, creates semantic embeddings, and generates intelligent study notes. It seamlessly integrates with Obsidian and provides a robust API for knowledge retrieval and note creation.
+The Document Miner MCP Server is a powerful tool that automatically processes your PDF documents, creates semantic embeddings, and generates intelligent study notes. It seamlessly integrates with Obsidian and provides a robust API for knowledge retrieval and note creation.
 
 ### ✨ Key Features
 
@@ -57,16 +57,6 @@ The Knowledge Base MCP Server is a powerful tool that automatically processes yo
    ```bash
    python quick_setup.py
    ```
-
-### First Run
-
-```bash
-# Start the MCP server
-python run_mcp_server.py
-
-# Or run the main server
-python server.py
-```
 
 ## 📖 Usage
 
@@ -179,10 +169,22 @@ This server implements the Model Context Protocol, making it compatible with var
 }
 ```
 
+### Steps to integrate it into Cursor/Claude
+```json
+{
+  "mcpServers": {
+    "knowledge-base": {
+      "command": "python",
+      "args": ["<PATH_TO_PROJECT_FOLDER>/run_mcp_server.py"]
+    }
+  }
+}
+```
+
 ## 📁 Project Structure
 
 ```
-knowledge-base-mcp-server/
+doc-miner-mcp-server/
 ├── 📄 server.py                 # Main MCP server
 ├── 📄 config.py                 # Configuration management
 ├── 📄 run_mcp_server.py         # MCP server runner
@@ -202,16 +204,6 @@ knowledge-base-mcp-server/
 ```
 
 ## 🔧 Development
-
-### Running Tests
-
-```bash
-# Test the chunking system
-python test_chunking_system.py
-
-# Test enhanced search
-python test_enhanced_search.py
-```
 
 ### Adding New Features
 
@@ -304,8 +296,6 @@ pre-commit install
    - Verify folder permissions
 
 ### Getting Help
-
-- 📖 Check the [Wiki](../../wiki) for detailed guides
 - 🐛 Report bugs in [Issues](../../issues)
 - 💬 Join discussions in [Discussions](../../discussions)
 
