@@ -235,7 +235,7 @@ graph LR
     
     H <--> I[🔍 Search Tool]
     H <--> J[📝 Note Creator]
-    H --> K[📚 Study Assistant]
+    H <--> K[📚 Study Assistant]
     
     I <--> E
     J <--> E
