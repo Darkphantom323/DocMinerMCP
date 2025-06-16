@@ -1,4 +1,4 @@
-# Knowledge Base MCP Server
+# Document Miner MCP Server
 
 > 🧠 An intelligent MCP server that transforms your documents into a searchable knowledge base with AI-powered note generation and Obsidian integration.
 
