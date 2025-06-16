@@ -69,7 +69,7 @@ The Document Miner MCP Server is a powerful tool that automatically processes yo
    └── textbooks/         # Academic textbooks
    ```
 
-2. **Process documents:**
+2. **Process documents, convert to chunks and push to vector database:**
    ```python
    from integrations.pdf_integration import PDFIntegration
    from config import Config
