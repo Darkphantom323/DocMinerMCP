@@ -323,7 +323,7 @@ pre-commit install
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [Model Context Protocol](https://modelcontextprotocol.io) for the MCP specification
 - [LangChain](https://langchain.com) for text processing capabilities
