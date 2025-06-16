@@ -173,8 +173,9 @@ This server implements the Model Context Protocol, making it compatible with var
 1. Navigate to Settings->Tools and Integrations and add MCP server
    
    ![image](https://github.com/user-attachments/assets/eb863ab3-6511-4368-91e5-8548981ad2e3)
+   <img src="https://github.com/user-attachments/assets/eb863ab3-6511-4368-91e5-8548981ad2e3" width="500">
 
-2. Add this in mcp.json and save it.
+3. Add this in mcp.json and save it.
 ```json
 {
   "mcpServers": {
