@@ -185,6 +185,7 @@ This server implements the Model Context Protocol, making it compatible with var
 }
 ```
 3. Toggle the MCP and enable it
+
    <img src="https://github.com/user-attachments/assets/5917721f-9596-410a-9b6a-bf5d08f6388d" width="600">
 
 5. Now the code assistant in client can access all the MCP tools. 
